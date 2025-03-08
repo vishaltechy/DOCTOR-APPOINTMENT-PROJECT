@@ -13,7 +13,7 @@ const doctorRegistration=async(req,res)=>{
           email: email,
           password: password
         })
-        res.status(201).send({msg:"you are succesfully registered"})
+        res.status(201).send({msg:"you are succesfully registered"});
         
     } catch (error) {
 
@@ -23,8 +23,19 @@ const doctorRegistration=async(req,res)=>{
     }
     
 }
-
-
-module.exports={ 
-   doctorRegistration
+const  doctorHomeDisplay=async(req,res)=>{
+    try {
+        const Doctor = await DoctorModel.find();
+        res.status(200).send(Doctor);
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
 }
+
+
+module.exports = {
+  doctorRegistration,
+  doctorHomeDisplay
+};
