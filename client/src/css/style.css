@@ -2,4 +2,14 @@
     width:  "100%";
     padding: 20px;
     background-color: lightblue;
+
+}
+#homedocters{
+    display: flex;
+ 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    background-image: url(https://media.istockphoto.com/id/1293132839/photo/human-heart-with-blocked-arteries.jpg?s=612x612&w=0&k=20&c=8IeDMz8kjt0Qn3L5LIuZo26PbO7cZFg5p-LKGU0ToU0=);
+  
 }

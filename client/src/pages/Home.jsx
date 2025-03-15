@@ -27,7 +27,7 @@ const Home = () => {
  const ans = mydata.map((key)=>{
    return (
      <>
-       <Card style={{ width: "18rem" }}>
+       <Card style={{ width: "18rem", backgroundColor:"yellow" }}>
          <Card.Body>
            <Card.Title>{key.name}</Card.Title>
            <Card.Text>{key.speciality} city:{key.city}
@@ -44,9 +44,10 @@ const Home = () => {
   return (
     <>
       <h1>welcome to online APPOINTMENT system</h1>
-      {ans}
+
+      <div id="homedocters">{ans}</div>
     </>
-  )
+  );
 }
 
 export default Home;
